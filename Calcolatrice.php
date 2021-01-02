@@ -184,7 +184,7 @@ class Calcolatrice
                 $finalExp .=$part;
         }
 
-        echo $finalExp; //TEST
+        //echo $finalExp; //TEST
 
 
         //Calcolo e Gestione errori
