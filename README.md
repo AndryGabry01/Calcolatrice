@@ -10,4 +10,4 @@
 
 ## Info
 Archivio - 2° Progetto Scolastico 5Dinfo <br>
-Compito di Informatica del 5 ottobre 2020
+Compito di Informatica del 31 dicembre 2021
