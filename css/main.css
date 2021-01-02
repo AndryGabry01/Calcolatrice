@@ -1,0 +1,91 @@
+/*https://coolors.co/223843-eff1f3-dbd3d8-d8b4a0-d77a61
+https://coolors.co/eac435-345995-e40066-03cea4-d77a61
+#EFF1F3
+*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#form {
+  width: 600px;
+  padding: 10px;
+  border: 0.2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#display {
+  border: 0.2px solid black;
+  border-radius: 10px;
+  min-height: 90px;
+  margin-bottom: 10px;
+  text-align: right;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  display: grid;
+  padding: 10px;
+  grid-template-rows: repeat(3, 1fr);
+  overflow-x: auto;
+  /*  direction: rtl;*/
+  font-size: 20px;
+  background-color: #eff1f3;
+}
+
+#display #Errore-Risultato {
+  text-align: left;
+}
+
+#display #fakePar{
+  color: red;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 8px;
+  column-gap: 8px;
+}
+
+.gridContainer input[type="button"],
+.gridContainer input[type="submit"] {
+  padding: 10px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.gridContainer input[type="button"]:hover,
+.gridContainer input[type="submit"]:hover {
+  transition: 0.2s;
+  filter: brightness(80%);
+}
+
+.blueButton {
+  border: 0.2px solid black;
+  outline: none;
+  color: #eff1f3;
+  background-color: #345995;
+}
+
+.orangeButton {
+  border: 0.2px solid black;
+  outline: none;
+  background-color: #d77a61;
+}
+
+.m {
+  text-align: right;
+  font-size: 10px;
+  margin: 5px;
+}
+
+.whiteButton {
+  border: 0.2px solid black;
+  outline: none;
+}
+
+.button {
+  border: 0.2px solid black;
+  outline: none;
+  background-color: #a5bce0;
+}
