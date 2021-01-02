@@ -88,7 +88,7 @@ class Calcolatrice
             if ($expArray[$i-1] == "π" && $expArray[$i] != "," && $expArray[$i] != ")" &&$expArray[$i] != "+" && $expArray[$i] != "-" && $expArray[$i] != "*" && $expArray[$i] != "/" ) {
                 $expArray[$i] = "|*|".$expArray[$i];
             } 
-            if (is_numeric($expArray[$i]) && (substr_count($expArray[$i-1],")") == 1 || substr_count($expArray[$i-1],"ANS") == 1)) {
+            if (is_numeric($expArray[$i]) && (substr_count($expArray[$i-1],")") == 1 || substr_count($expArray[$i-1],"ANS") == 1 || substr_count($expArray[$i-1],"M") == 1)) {
                 $expArray[$i] = "|*|".$expArray[$i];
             }
             if ($i>0 && 
@@ -184,7 +184,7 @@ class Calcolatrice
                 $finalExp .=$part;
         }
 
-        //echo $finalExp; //TEST
+        echo $finalExp; //TEST
 
 
         //Calcolo e Gestione errori
