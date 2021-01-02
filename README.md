@@ -7,3 +7,7 @@
 * Il display è composto da tre righe, la prima contenente l'espressione appena calcolata, la seconda contenete l'errore o il risultato ed infine 
   la terza dove apparirà il testo quando verrano premuti i pulsanti sulla calcolatrice.
 * Le funzioni trigonometriche sono espresse in radianti.
+
+## Info
+Archivio - 2° Progetto Scolastico 5Dinfo <br>
+Compito di Informatica del 5 ottobre 2020
