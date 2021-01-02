@@ -70,15 +70,15 @@
             <input type="button" class="blueButton" onclick="c()" value="C">
 
             <input type="button" class="button" onclick="rad('√^2')" value="√^2">
-            <input type="button" class="button" onclick="funzioniBase('cos(')" value="Cos">
-            <input type="button" class="button"  onclick="funzioniBase('sin(')" value="Sin">
+            <input type="button" class="button" onclick="funzioniBase('cose(')" value="Cos">
+            <input type="button" class="button"  onclick="funzioniBase('sine(')" value="Sin">
             <input type="button" class="whiteButton" onclick="num('7')" value="7">
             <input type="button" class="whiteButton" onclick="num('8')" value="8">
             <input type="button" class="whiteButton" onclick="num('9')" value="9">
             <input type="button" onclick="op('-')" class="button" value="-">
 
             <input type="button" class="button" onclick="fattoriale()" value="n!">
-            <input type="button" class="button" onclick="funzioniBase('tan(')" value="Tan">
+            <input type="button" class="button" onclick="funzioniBase('tane(')" value="Tan">
             <input type="button" class="button" onclick="funzioniBase('cotan(')" value="CoTan">
             <input type="button" class="whiteButton" onclick="num('4')" value="4">
             <input type="button" class="whiteButton" onclick="num('5')" value="5">
@@ -117,5 +117,21 @@
             } ?>">
         </div>
     </form>
+    
+    <h1>Istruzioni</h1>
+    <ol>
+        <li>
+            1.Quando si utiliza una funzione come cos(), sin(), tan(), cotan(), rec(), radice ^2 e ^n<br>
+              la calcolatrice creera delle parentesi <b>Rosse</b> guida. <br> Quindi sarà necessario inserirle per poter effetuare il calcolo.
+        </li>
+        <li>
+            2.Per poter usare la memoria della calcolatrice, quindi i pulsanti STO, M+ e M, bisognerà prima effetuare il calcolo premendo il tasto <b>=</b>,<br> 
+              solo succesivamente si potra salvare il risultato nella memoria. 
+        </li>
+        <li>
+            3,Il display è composto da tre righe, la prima contenente l'espressione appena calcolata,<br> 
+              la seconda contenete l'errore o il risultato ed infine la terza dove apparirà il testo quando verrano premuti i pulsanti sulla calcolatrice.
+        </li>
+    </ol>
 </body>
 </html>

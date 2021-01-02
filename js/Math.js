@@ -245,6 +245,9 @@ function StringRefactorCalc(string) {
 function StringRefactorDisplay(string) {
     string = string.replaceAll("|","");
     string = string.replaceAll(",","(");
+    string = string.replaceAll("cose(","cos(");
+    string = string.replaceAll("sine(","sin(");
+    string = string.replaceAll("tane(","tan(");
     string = string.replaceAll("radn(","√^");
     string = string.replaceAll("sqrt(","√^2(")
     return string;

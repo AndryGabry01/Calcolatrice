@@ -92,7 +92,7 @@ class Calcolatrice
                 $expArray[$i] = "|*|".$expArray[$i];
             }
             if ($i>0 && 
-                  ($expArray[$i] == "(" ||$expArray[$i] == "M" || $expArray[$i] == "ANS" || $expArray[$i] == "cos("|| $expArray[$i] == "sin("|| $expArray[$i] == "tan("|| $expArray[$i] == "cotan(" || $expArray[$i] == "radn(" || $expArray[$i] == "sqrt(" || $expArray[$i] == "rec(") && 
+                  ($expArray[$i] == "(" ||$expArray[$i] == "M" || $expArray[$i] == "ANS" || $expArray[$i] == "cose("|| $expArray[$i] == "sine("|| $expArray[$i] == "tane("|| $expArray[$i] == "cotan(" || $expArray[$i] == "radn(" || $expArray[$i] == "sqrt(" || $expArray[$i] == "rec(") && 
                   ($expArray[$i] != "," && $expArray[$i-1] != "+" && $expArray[$i-1] != "*"&& $expArray[$i-1] != "**"  && $expArray[$i-1] != "/" && $expArray[$i-1] != "-" && $expArray[$i-1] != "(" && substr_count($expArray[$i-1],"(") == 0)
                 )
             {
@@ -147,7 +147,19 @@ class Calcolatrice
         //Funzione cotangente
         function cotan($tan)
         {
-            return 1/(tan($tan));
+            return 1/(tane($tan));
+        }
+        function cose($cos)
+        {
+            return round(cos(deg2rad($cos)), 3);
+        }
+        function sine($cos)
+        {
+            return round(sin(deg2rad($cos)), 3);
+        }
+        function tane($cos)
+        {
+            return round(tan(deg2rad($cos)), 3);
         }
         //Funzione radice alla n
         function radn($elev,$radic)
