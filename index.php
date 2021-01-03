@@ -117,25 +117,5 @@
             } ?>">
         </div>
     </form>
-    
-    <h1>Istruzioni</h1>
-    <ol>
-        <li>
-            1.Quando si utiliza una funzione come cos(), sin(), tan(), cotan(), rec(), radice ^2 e ^n<br>
-              la calcolatrice creera delle parentesi <b>Rosse</b> guida. <br> Quindi sarà necessario inserirle per poter effetuare il calcolo.
-        </li>
-        <li>
-            2.Per poter usare la memoria della calcolatrice, quindi i pulsanti STO, M+ e M, bisognerà prima effetuare il calcolo premendo il tasto <b>=</b>,<br> 
-              solo succesivamente si potra salvare il risultato nella memoria. 
-        </li>
-        <li>
-            3.Il display è composto da tre righe, la prima contenente l'espressione appena calcolata,<br> 
-              la seconda contenete l'errore o il risultato ed infine la terza dove apparirà il testo quando verrano premuti i pulsanti sulla calcolatrice.
-        </li>
-        <li>
-            4.Il display è composto da tre righe, la prima contenente l'espressione appena calcolata,<br> 
-              la seconda contenete l'errore o il risultato ed infine la terza dove apparirà il testo quando verrano premuti i pulsanti sulla calcolatrice.
-        </li>
-    </ol>
 </body>
 </html>
