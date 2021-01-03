@@ -23,7 +23,7 @@
     if (isset($_POST['risultato'])) {
         $calcoli->setANSExp($_POST['risultato']); 
     }
-    if (isset($_POST['calc']) && isset($_POST['calcExp']) && isset($_POST['disExp'])) {
+    if (isset($_POST['calc']) && isset($_POST['calcExp']) && isset($_POST['disExp']) && $_POST['calcExp'] != "" && $_POST['disExp'] != "") {
         $calcoli->makeCalc();
     }
     if (isset($_POST['sto']) && isset($_POST['risultato'])) {
@@ -102,8 +102,8 @@
             <input type="button" onclick="op('+')" class="button" value="+">
 
 
-            <input type="hidden" id="calcExp" name="calcExp" value="0">
-            <input type="hidden" id="disExp"  name="disExp" value="0">
+            <input type="hidden" id="calcExp" name="calcExp" value="">
+            <input type="hidden" id="disExp"  name="disExp" value="">
             <input type="hidden" id="memory"  name="memory" value="<?php echo $calcoli->getMemoryExp(); ?>">
             <input type="hidden" id="risultato"  name="risultato" value="<?php 
             if ( $calcoli->getResultExp() != null && $calcoli->getResultExp() == 0) {

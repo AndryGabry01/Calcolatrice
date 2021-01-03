@@ -288,7 +288,7 @@ function ce() {
     //Verifico se è stata cancellata una parentesi )
     
     count = (tempString.substring(pipeIndex,tempString.length).match(/\)/g) || []).length;
-    if (count>0) {
+    if (count>0 && tempString.length > 1) {
         haveParentesi.unshift(")")
     }
 
@@ -304,7 +304,7 @@ function ce() {
 
     disExpOBJ.value = StringRefactorDisplay(calcExpOBJ.value);
     if (disExpOBJ.value == "") {
-        expOBJ.innerHTML  = "0";
+        expOBJ.innerHTML  = "";
     }else{
         expOBJ.innerHTML  = disExpOBJ.value;
     }
@@ -324,7 +324,7 @@ function c() {
         
     calcExpOBJ.value = "";
     disExpOBJ.value = "";
-    expOBJ.innerHTML  = "0";
+    expOBJ.innerHTML  = "";
+    haveParentesi = [];
 }
 
-//numeri by tastiera trigger
